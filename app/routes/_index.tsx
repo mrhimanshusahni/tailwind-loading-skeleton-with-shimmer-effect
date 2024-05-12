@@ -1,6 +1,6 @@
 import { type MetaFunction } from "@remix-run/node";
 import { ShimmerEffectWrapper } from "~/components/shimmer-effect-wrapper";
-import { CardSkelton } from "~/components/card-skelton";
+import { CardSkeleton } from "~/components/card-skeleton";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,7 +15,7 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
 
       <ShimmerEffectWrapper className="mx-auto max-w-xs">
-        <CardSkelton />
+        <CardSkeleton />
       </ShimmerEffectWrapper>
     </div>
   );
